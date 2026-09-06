@@ -5,6 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beatmungsgeräte – MedizinInformatik Wiki</title>
 <link rel="stylesheet" href="../assets/style.css">
+<style>
+  /* Ergänzung: sichtbare Zeilen- und Spaltentrennung für alle Tabellen */
+  main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0 1.5em 0;
+  }
+  main table th,
+  main table td {
+    border: 1px solid #b0b8c0;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  main table thead th {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border-color: #2c3e50;
+  }
+  main table tbody tr:nth-child(even) {
+    background-color: #f4f6f8;
+  }
+  main table tbody tr:hover {
+    background-color: #eaf1fb;
+  }
+</style>
 </head>
 <body>
 <header><div class="header-inner">
@@ -48,19 +74,16 @@
 </div>
 
 <h3>1. Was ist ein Beatmungsgerät?</h3>
-<p>
-  Ein Beatmungsgerät ist ein Medizinprodukt, das die Atmung eines Patienten
-  unterstützt oder teilweise bzw. vollständig übernimmt. Moderne Systeme
-  können Atemgas mit definiertem Druck, Volumen, Flow und Sauerstoffanteil
-  zuführen und gleichzeitig Atemdruck, Flow, Volumen und weitere
-  physiologische Größen überwachen.
-</p>
-<p>
-  Aus Sicht der Medizininformatik ist ein Beatmungsgerät nicht nur ein
-  pneumatisches System. Es besteht aus Sensorik, Aktorik, Echtzeitsoftware,
-  Benutzeroberfläche, Alarmmanagement, Datenspeicherung und häufig aus
-  Schnittstellen zu Patientenmonitoren und klinischen Informationssystemen.
-</p>
+<table>
+<thead><tr><th>Aspekt</th><th>Beschreibung</th></tr></thead>
+<tbody>
+<tr><td>Grundfunktion</td><td>Ein Beatmungsgerät ist ein Medizinprodukt, das die Atmung eines Patienten unterstützt oder teilweise bzw. vollständig übernimmt.</td></tr>
+<tr><td>Gaszufuhr</td><td>Moderne Systeme können Atemgas mit definiertem Druck, Volumen, Flow und Sauerstoffanteil zuführen.</td></tr>
+<tr><td>Überwachung</td><td>Gleichzeitig werden Atemdruck, Flow, Volumen und weitere physiologische Größen überwacht.</td></tr>
+<tr><td>Sicht der Medizininformatik</td><td>Ein Beatmungsgerät ist nicht nur ein pneumatisches System, sondern besteht aus Sensorik, Aktorik, Echtzeitsoftware, Benutzeroberfläche, Alarmmanagement und Datenspeicherung.</td></tr>
+<tr><td>Schnittstellen</td><td>Häufig bestehen Schnittstellen zu Patientenmonitoren und klinischen Informationssystemen.</td></tr>
+</tbody>
+</table>
 
 <h3>2. Einsatzbereiche</h3>
 <table>
@@ -327,14 +350,19 @@
 </table>
 
 <h3>13. Wartung und Qualitätssicherung</h3>
-<p>
-  Beatmungsgeräte müssen entsprechend Herstellerangaben, Betreiberpflichten
-  und den für die jeweilige Einrichtung geltenden Medizinproduktevorgaben
-  betrieben und gewartet werden. Technisch relevant sind insbesondere
-  Funktionsprüfung, Sensorprüfung, Alarmprüfung, Dichtigkeitsprüfung,
-  Filterwechsel, Reinigung/Aufbereitung und die Kontrolle von Software- und
-  Konfigurationsständen.
-</p>
+<table>
+<thead><tr><th>Aspekt</th><th>Beschreibung</th></tr></thead>
+<tbody>
+<tr><td>Rechtlicher Rahmen</td><td>Beatmungsgeräte müssen entsprechend Herstellerangaben, Betreiberpflichten und den für die jeweilige Einrichtung geltenden Medizinproduktevorgaben betrieben und gewartet werden.</td></tr>
+<tr><td>Funktionsprüfung</td><td>Regelmäßige Prüfung der korrekten Gerätefunktion.</td></tr>
+<tr><td>Sensorprüfung</td><td>Kontrolle der Mess- und Sensorgenauigkeit.</td></tr>
+<tr><td>Alarmprüfung</td><td>Überprüfung der Alarmfunktionen und -schwellen.</td></tr>
+<tr><td>Dichtigkeitsprüfung</td><td>Kontrolle des Atemsystems auf Leckagen.</td></tr>
+<tr><td>Filterwechsel</td><td>Turnusmäßiger Austausch von Filtern.</td></tr>
+<tr><td>Reinigung/Aufbereitung</td><td>Hygienische Aufbereitung gemäß Herstellervorgaben.</td></tr>
+<tr><td>Software-/Konfigurationsstand</td><td>Kontrolle der eingesetzten Software- und Konfigurationsversionen.</td></tr>
+</tbody>
+</table>
 
 <h3>14. Begriffe für die Medizininformatik</h3>
 <table>
@@ -353,16 +381,19 @@
 </table>
 
 <h3>15. Hersteller-Dokumentation und weiterführende Quellen</h3>
-<ul>
-  <li><a href="https://www.draeger.com/de_de/Products/Evita-V800" target="_blank" rel="noopener">Dräger – Evita V800 Produktseite und Downloads</a></li>
-  <li><a href="https://loewensteinmedical.com/de-de/ausserklinische-beatmung/" target="_blank" rel="noopener">Löwenstein Medical – Außerklinische Beatmung</a></li>
-  <li><a href="https://www.hamilton-medical.com/de/Products/HAMILTON-C6/variants/variant-0.html" target="_blank" rel="noopener">Hamilton Medical – HAMILTON-C6 und Dokumentation</a></li>
-  <li><a href="https://www.getinge.com/de/produkte/beatmungsgeraet-servo-u/" target="_blank" rel="noopener">Getinge – SERVO-u</a></li>
-  <li><a href="https://www.mindray.com/de/products/ventilators" target="_blank" rel="noopener">Mindray Deutschland – Beatmungsgeräte</a></li>
-  <li><a href="https://eu.nihonkohden.com/de/products/ventilation/nkv-550" target="_blank" rel="noopener">Nihon Kohden Europe – NKV-550</a></li>
-  <li><a href="https://www.medtronic.com/covidien/de-de/products/mechanical-ventilation/puritan-bennett-980-ventilator.html" target="_blank" rel="noopener">Medtronic Deutschland – Puritan Bennett 980</a></li>
-  <li><a href="https://www.philips.com/a-w/about/news/media-library/20180914-Philips-Trilogy-Evo.html" target="_blank" rel="noopener">Philips – Trilogy Evo</a></li>
-</ul>
+<table>
+<thead><tr><th>Hersteller</th><th>Quelle</th></tr></thead>
+<tbody>
+<tr><td>Dräger</td><td><a href="https://www.draeger.com/de_de/Products/Evita-V800" target="_blank" rel="noopener">Evita V800 Produktseite und Downloads</a></td></tr>
+<tr><td>Löwenstein Medical</td><td><a href="https://loewensteinmedical.com/de-de/ausserklinische-beatmung/" target="_blank" rel="noopener">Außerklinische Beatmung</a></td></tr>
+<tr><td>Hamilton Medical</td><td><a href="https://www.hamilton-medical.com/de/Products/HAMILTON-C6/variants/variant-0.html" target="_blank" rel="noopener">HAMILTON-C6 und Dokumentation</a></td></tr>
+<tr><td>Getinge</td><td><a href="https://www.getinge.com/de/produkte/beatmungsgeraet-servo-u/" target="_blank" rel="noopener">SERVO-u</a></td></tr>
+<tr><td>Mindray</td><td><a href="https://www.mindray.com/de/products/ventilators" target="_blank" rel="noopener">Mindray Deutschland – Beatmungsgeräte</a></td></tr>
+<tr><td>Nihon Kohden</td><td><a href="https://eu.nihonkohden.com/de/products/ventilation/nkv-550" target="_blank" rel="noopener">NKV-550</a></td></tr>
+<tr><td>Medtronic</td><td><a href="https://www.medtronic.com/covidien/de-de/products/mechanical-ventilation/puritan-bennett-980-ventilator.html" target="_blank" rel="noopener">Puritan Bennett 980</a></td></tr>
+<tr><td>Philips</td><td><a href="https://www.philips.com/a-w/about/news/media-library/20180914-Philips-Trilogy-Evo.html" target="_blank" rel="noopener">Trilogy Evo</a></td></tr>
+</tbody>
+</table>
 
 <div class="note">
   <strong>Stand der Herstellerübersicht:</strong> September 2026.
