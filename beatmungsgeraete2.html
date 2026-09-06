@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beatmungsgeräte – MedizinInformatik Wiki</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header><div class="header-inner">
+<h1>MedizinInformatik Wiki</h1>
+<p>Technisches Nachschlagewerk für Medizininformatik, Medizin-IT und Web Engineering</p>
+</div></header>
+<nav><div class="nav-inner">
+<a href="../index.html">Startseite</a>
+<a href="../medizintechnik/index.html">Medizintechnik</a>
+<a href="../vernetzung/index.html">Vernetzung</a>
+<a href="../krankenhaus-it/index.html">Krankenhaus-IT</a>
+<a href="../klinische-informationssysteme/index.html">KIS & Systeme</a>
+<a href="../datenfluesse/index.html">Datenflüsse</a>
+<a href="../schnittstellen-standards/index.html">Standards</a>
+<a href="../server-backend/index.html">Server</a>
+<a href="../cybersecurity/index.html">Cybersecurity</a>
+<a href="../web-engineering/index.html">Web Engineering</a>
+<a href="../praxis/index.html">Praxis</a>
+</div></nav>
+<main>
+<div class="breadcrumb"><a href="../index.html">Startseite</a> / Medizintechnik / Beatmungsgeräte</div>
+<div class="hero">
+
+<h2>Beatmungsgeräte</h2>
+<p>Dieser Wiki-Artikel ist als technische Wissensseite für <strong>Beatmungsgeräte</strong> vorgesehen.</p>
+<div class="note"><strong>Dokumentationsstruktur:</strong> Grundlagen · Komponenten · technische Funktionsweise · Konfiguration · Datenfluss · Schnittstellen · Sicherheit · Fehleranalyse · Praxisbeispiele.</div>
+<h3>Grundlagen</h3>
+<p>Hier werden Begriff, Zweck, typische Einsatzumgebung und die Rolle innerhalb der medizinischen IT-Infrastruktur beschrieben.</p>
+<h3>Beatmungsparameter</h3>
+<p>Übersicht der zentralen Einstell- und Messgrößen der Beatmung mit Abkürzung, Bedeutung und typischer Einstellung bzw. Orientierung.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Abkürzung</th>
+<th>Bedeutung</th>
+<th>Typische Einstellung/Orientierung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atemzugvolumen</td>
+<td>VT / Vt</td>
+<td>Volumen pro Atemzug</td>
+<td>häufig ca. 6–8 ml/kg KG; bei ARDS eher 4–6 ml/kg Ideal-/Sollgewicht</td>
+</tr>
+<tr>
+<td>Atemfrequenz</td>
+<td>RR / f</td>
+<td>Atemzüge/min</td>
+<td>z. B. 10–20/min, abhängig von Erkrankung und Ventilation</td>
+</tr>
+<tr>
+<td>Minutenventilation</td>
+<td>MV / VE</td>
+<td>VT × Atemfrequenz</td>
+<td>bestimmt wesentlich die CO₂-Elimination</td>
+</tr>
+<tr>
+<td>Sauerstoffkonzentration</td>
+<td>FiO₂</td>
+<td>inspiratorischer O₂-Anteil</td>
+<td>0,21–1,0</td>
+</tr>
+<tr>
+<td>PEEP</td>
+<td>PEEP</td>
+<td>positiver endexspiratorischer Druck</td>
+<td>z. B. 5 cmH₂O; bei Hypoxämie/ARDS ggf. höher</td>
+</tr>
+<tr>
+<td>inspiratorischer Druck</td>
+<td>Pinsp / ΔP</td>
+<td>Druck während Inspiration</td>
+<td>abhängig vom Modus</td>
+</tr>
+<tr>
+<td>Spitzendruck</td>
+<td>Ppeak</td>
+<td>maximaler Atemwegsdruck</td>
+<td>Monitoringparameter; sollte möglichst niedrig gehalten werden</td>
+</tr>
+<tr>
+<td>Plateau-Druck</td>
+<td>Pplat</td>
+<td>Druck nach Inspirationspause</td>
+<td>wichtiger Parameter für Lungenschutz; bei ARDS meist Ziel ≤30 cmH₂O</td>
+</tr>
+<tr>
+<td>Driving Pressure</td>
+<td>ΔP</td>
+<td>Pplat − PEEP</td>
+<td>wichtiger Parameter der lungenschützenden Beatmung</td>
+</tr>
+<tr>
+<td>Inspirationszeit</td>
+<td>Ti</td>
+<td>Dauer der Inspiration</td>
+<td>z. B. 0,8–1,2 s</td>
+</tr>
+<tr>
+<td>I:E-Verhältnis</td>
+<td>I:E</td>
+<td>Inspiration : Exspiration</td>
+<td>häufig 1:2 bis 1:3</td>
+</tr>
+<tr>
+<td>inspiratorischer Flow</td>
+<td>Flow</td>
+<td>Gasfluss während Inspiration</td>
+<td>abhängig von Modus und Patient</td>
+</tr>
+<tr>
+<td>Trigger</td>
+<td>Trigger</td>
+<td>wann der Patient einen Atemzug auslöst</td>
+<td>Flow- oder Drucktrigger</td>
+</tr>
+<tr>
+<td>Pressure Support</td>
+<td>PS / ASB</td>
+<td>zusätzliche Druckunterstützung spontaner Atemzüge</td>
+<td>insbesondere PSV/CPAP</td>
+</tr>
+<tr>
+<td>Atemwegswiderstand</td>
+<td>Raw</td>
+<td>Resistance der Atemwege</td>
+<td>besonders relevant bei Obstruktion</td>
+</tr>
+<tr>
+<td>Compliance</td>
+<td>Crs</td>
+<td>Dehnbarkeit von Lunge/Thorax</td>
+<td>wichtig zur Beurteilung der Atemmechanik</td>
+</tr>
+<tr>
+<td>EtCO₂</td>
+<td>EtCO₂</td>
+<td>endtidales CO₂</td>
+<td>Monitoring der Ventilation</td>
+</tr>
+<tr>
+<td>SpO₂</td>
+<td>SpO₂</td>
+<td>arterielle Sauerstoffsättigung</td>
+<td>Ziel abhängig von Krankheitsbild</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Technischer Zusammenhang</h3>
+<p>Die Seite wird schrittweise um Architektur, Protokolle, Datenformate, Netzwerkwege, Serverrollen und Integrationsbeispiele erweitert.</p>
+
+<h3>Praxis und Fehleranalyse</h3>
+<p>Geplant sind typische Szenarien, Diagnosewege, Logs, häufige Fehlerursachen und Lösungsansätze.</p>
+
+</div>
+</main>
+<footer>MedizinInformatik Wiki · Technische Dokumentation · Ausbau als Wiki</footer>
+</body>
+</html>
