@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beatmungsgeräte – MedizinInformatik Wiki</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header><div class="header-inner">
+<h1>MedizinInformatik Wiki</h1>
+<p>Technisches Nachschlagewerk für Medizininformatik, Medizin-IT und Web Engineering</p>
+</div></header>
+<nav><div class="nav-inner">
+<a href="../index.html">Startseite</a>
+<a href="../medizintechnik/index.html">Medizintechnik</a>
+<a href="../vernetzung/index.html">Vernetzung</a>
+<a href="../krankenhaus-it/index.html">Krankenhaus-IT</a>
+<a href="../klinische-informationssysteme/index.html">KIS & Systeme</a>
+<a href="../datenfluesse/index.html">Datenflüsse</a>
+<a href="../schnittstellen-standards/index.html">Standards</a>
+<a href="../server-backend/index.html">Server</a>
+<a href="../cybersecurity/index.html">Cybersecurity</a>
+<a href="../web-engineering/index.html">Web Engineering</a>
+<a href="../praxis/index.html">Praxis</a>
+</div></nav>
+<main>
+
+<div class="breadcrumb">
+
+<a index.htmlStartseite</a> /
+
+Medizintechnik /
+
+Beatmungsgeräte
+
+</div>
+<div class="hero">
+
+<h2>Beatmungsgeräte</h2>
+
+<p>
+
+Diese Seite dient als technisches Nachschlagewerk für moderne
+
+Beatmungsgeräte, Beatmungsparameter, Beatmungsmodi und aktuelle
+
+Herstellerplattformen.
+
+</p>
+
+<div class="note">
+
+<strong>Dokumentationsstruktur:</strong>
+
+Grundlagen · Beatmungsparameter · Beatmungsmodi · Hersteller ·
+
+Vergleichstabellen · Monitoring · Praxis
+
+</div>
+
+<h3>1. Klassische Beatmungsparameter</h3>
+ 
+<table>
+
+<thead>
+
+<tr>
+
+<th>Parameter</th>
+
+<th>Abkürzung</th>
+<th>Bedeutung</th>
+
+<th>Typische Einstellung / Orientierung</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Atemzugvolumen</td>
+
+<td><strong>VT / Vt</strong></td>
+
+<td>Volumen pro Atemzug</td>
+<td>6–8 ml/kg KG, bei ARDS 4–6 ml/kg Idealgewicht</td>
+
+</tr>
+
+<tr>
+
+<td>Atemfrequenz</td>
+
+<td><strong>RR / f</strong></td>
+
+<td>Atemzüge pro Minute</td>
+
+<td>10–20/min</td>
+
+</tr>
+
+<tr>
+
+<td>Minutenventilation</td>
+
+<td><strong>MV / VE</strong></td>
+
+<td>VT × RR</td>
+
+<td>CO₂-Elimination</td>
+
+</tr>
+
+<tr>
+
+<td>Sauerstoffkonzentration</td>
+
+<td><strong>FiO₂</strong></td>
+
+<td>Inspiratorischer Sauerstoffanteil</td>
+
+<td>21–100 %</td>
+
+</tr>
+
+<tr>
+
+<td>PEEP</td>
+
+<td><strong>PEEP</strong></td>
+
+<td>Positiver endexspiratorischer Druck</td>
+
+<td>5 cmH₂O oder höher</td>
+
+</tr>
+
+<tr>
+
+<td>Inspiratorischer Druck</td>
+
+<td><strong>Pinsp / ΔP</strong></td>
+
+<td>Druck während der Inspiration</td>
+
+<td>Modusabhängig</td>
+
+</tr>
+
+<tr>
+
+<td>Spitzendruck</td>
+
+<td><strong>Ppeak</strong></td>
+
+<td>Maximaler Atemwegsdruck</td>
+
+<td>Monitoringparameter</td>
+
+</tr>
+
+<tr>
+
+<td>Plateaudruck</td>
+
+<td><strong>Pplat</strong></td>
+
+<td>Druck nach Inspirationspause</td>
+
+<td>Ziel häufig ≤ 30 cmH₂O</td>
+
+</tr>
+
+<tr>
+
+<td>Driving Pressure</td>
+
+<td><strong>ΔP</strong></td>
+
+<td>Pplat − PEEP</td>
+
+<td>Wichtiger Lungenschutzparameter</td>
+
+</tr>
+
+<tr>
+
+<td>Inspirationszeit</td>
+
+<td><strong>Ti</strong></td>
+
+<td>Dauer der Inspiration</td>
+
+<td>0,8–1,2 s</td>
+
+</tr>
+
+<tr>
+
+<td>I:E-Verhältnis</td>
+
+<td><strong>I:E</strong></td>
+
+<td>Inspiration : Exspiration</td>
+
+<td>1:2 bis 1:3</td>
+
+</tr>
+
+<tr>
+
+<td>Inspiratorischer Flow</td>
+
+<td><strong>Flow</strong></td>
+
+<td>Gasfluss während der Inspiration</td>
+
+<td>Patienten- und Modusabhängig</td>
+
+</tr>
+
+<tr>
+
+<td>Trigger</td>
+
+<td><strong>Trigger</strong></td>
+
+<td>Auslösung eines Atemzugs</td>
+
+<td>Flow- oder Drucktrigger</td>
+
+</tr>
+
+<tr>
+
+<td>Pressure Support</td>
+
+<td><strong>PS / ASB</strong></td>
+
+<td>Druckunterstützung spontaner Atemzüge</td>
+
+<td>PSV / CPAP</td>
+
+</tr>
+
+<tr>
+
+<td>Resistance</td>
+
+<td><strong>Raw</strong></td>
+
+<td>Atemwegswiderstand</td>
+
+<td>Relevant bei Obstruktion</td>
+
+</tr>
+
+<tr>
+
+<td>Compliance</td>
+
+<td><strong>Crs</strong></td>
+
+<td>Dehnbarkeit von Lunge und Thorax</td>
+
+<td>Atemmechanik</td>
+
+</tr>
+
+<tr>
+
+<td>EtCO₂</td>
+
+<td><strong>EtCO₂</strong></td>
+
+<td>Endtidales Kohlendioxid</td>
+
+<td>Ventilationskontrolle</td>
+
+</tr>
+
+<tr>
+
+<td>SpO₂</td>
+
+<td><strong>SpO₂</strong></td>
+
+<td>Sauerstoffsättigung</td>
+
+<td>Zielwert abhängig vom Krankheitsbild</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<h3>Wichtige Zusammenhänge</h3>
+
+<div class="note">
+
+<strong>Minutenventilation:</strong><br>
+
+VE = VT × RR
+
+</div>
+
+<div class="note">
+
+<strong>Driving Pressure:</strong><br>
+
+ΔP = Pplat − PEEP
+
+</div>
+<h3>2. Klassische Beatmungsmodi</h3>
+<table>
+
+<thead>
+
+<tr>
+
+<th>Modus</th>
+
+<th>Beschreibung</th>
+
+<th>Typische Anwendung</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>VCV</td>
+
+<td>Volumenkontrollierte Beatmung</td>
+
+<td>Standard-ICU</td>
+
+</tr>
+
+<tr>
+
+<td>PCV</td>
+
+<td>Druckkontrollierte Beatmung</td>
+
+<td>ARDS, Intensivmedizin</td>
+
+</tr>
+
+<tr>
+
+<td>PSV / ASB</td>
+
+<td>Druckunterstützte Spontanatmung</td>
+
+<td>Weaning</td>
+
+</tr>
+
+<tr>
+
+<td>SIMV</td>
+
+<td>Mandatorische und spontane Atemzüge</td>
+
+<td>Übergangsphase</td>
+
+</tr>
+
+<tr>
+
+<td>CPAP</td>
+
+<td>Kontinuierlicher positiver Atemwegsdruck</td>
+
+<td>Spontanatmung</td>
+
+</tr>
+
+<tr>
+
+<td>APRV</td>
+
+<td>Airway Pressure Release Ventilation</td>
+
+<td>Hypoxämie, ARDS</td>
+
+</tr>
+
+<tr>
+
+<td>NIV</td>
+
+<td>Nicht-invasive Beatmung</td>
+
+<td>Maske, COPD, Weaning</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<h3>3. Hersteller und aktuelle Geräte</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Hersteller</th>
+
+<th>Gerät</th>
+
+<th>Bereich</th>
+
+<th>Besonderheiten</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Dräger</td>
+
+<td>Evita V800</td>
+
+<td>ICU</td>
+
+<td>Autoflow, SmartCare</td>
+
+</tr>
+
+<tr>
+
+<td>GE HealthCare</td>
+
+<td>CARESCAPE R860</td>
+
+<td>ICU</td>
+
+<td>SpiroDynamics</td>
+
+</tr>
+
+<tr>
+
+<td>Hamilton Medical</td>
+
+<td>Hamilton C6</td>
+
+<td>ICU</td>
+
+<td>INTELLiVENT-ASV, ASV</td>
+
+</tr>
+
+<tr>
+
+<td>Getinge</td>
+
+<td>SERVO-u</td>
+
+<td>ICU</td>
+
+<td>NAVA, Weaning-Unterstützung</td>
+
+</tr>
+
+<tr>
+
+<td>Mindray</td>
+
+<td>SV900 / SV800</td>
+
+<td>ICU</td>
+
+<td>Modernes Lung Monitoring</td>
+
+</tr>
+
+<tr>
+
+<td>Nihon Kohden</td>
+
+<td>NKV-550</td>
+
+<td>ICU / Neonatologie</td>
+
+<td>HFNC, NIV und invasive Beatmung</td>
+
+</tr>
+
+<tr>
+
+<td>Medtronic</td>
+
+<td>Puritan Bennett 980</td>
+
+<td>ICU</td>
+
+<td>NIV+, NeoMode</td>
+
+</tr>
+
+<tr>
+
+<td>Löwenstein Medical</td>
+
+<td>prisma VENT 50</td>
+
+<td>NIV / Homecare</td>
+
+<td>Volumen- und Druckmodi</td>
+
+</tr>
+
+<tr>
+
+<td>Philips Respironics</td>
+
+<td>Trilogy Evo</td>
+
+<td>NIV / Homecare</td>
+
+<td>Aktuelle Geräteplattform</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<h3>4. Technische Vergleichskriterien</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Kategorie</th>
+
+<th>Vergleichskriterium</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr><td>Patientengruppe</td><td>Neonatologie, Pädiatrie, Erwachsene</td></tr>
+
+<tr><td>VT-Bereich</td><td>ml</td></tr>
+
+<tr><td>Druckbereich</td><td>cmH₂O</td></tr>
+
+<tr><td>FiO₂</td><td>%</td></tr>
+
+<tr><td>PEEP</td><td>cmH₂O</td></tr>
+
+<tr><td>VCV</td><td>Ja / Nein</td></tr>
+
+<tr><td>PCV</td><td>Ja / Nein</td></tr>
+
+<tr><td>PRVC</td><td>Ja / Nein</td></tr>
+
+<tr><td>PSV</td><td>Ja / Nein</td></tr>
+
+<tr><td>SIMV</td><td>Ja / Nein</td></tr>
+
+<tr><td>APRV</td><td>Ja / Nein</td></tr>
+
+<tr><td>NIV</td><td>Ja / Nein</td></tr>
+
+<tr><td>High Flow</td><td>Ja / Nein</td></tr>
+
+<tr><td>NAVA</td><td>Ja / Nein</td></tr>
+
+<tr><td>ASV / Closed Loop</td><td>Ja / Nein</td></tr>
+
+<tr><td>Compliance</td><td>Monitoring</td></tr>
+
+<tr><td>Resistance</td><td>Monitoring</td></tr>
+
+<tr><td>Driving Pressure</td><td>Monitoring</td></tr>
+
+<tr><td>Mechanical Power</td><td>Monitoring</td></tr>
+
+<tr><td>Batterie</td><td>Laufzeit</td></tr>
+
+<tr><td>Turbine</td><td>Ja / Nein</td></tr>
+
+<tr><td>Bildschirm</td><td>Zoll</td></tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</main>
+<footer>MedizinInformatik Wiki · Technische Dokumentation · Ausbau als Wiki</footer>
+</body>
+</html>
